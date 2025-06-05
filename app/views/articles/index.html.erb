@@ -1,0 +1,19 @@
+<h1>List of all Artticles</h1>
+<hr>
+
+<table width='60%' border='1' cellspacing='0' cellpadding='10'>
+    <tr>
+        <th align='left'>Title</th>
+        <th align='left'>Description</th>
+        <th align='left'>Action</th>
+    </tr>  
+    <tbody>
+        <% @articles.each do |article| %>
+        <tr>
+            <td><%= article.title %></td>
+            <td><%= article.description %></td>
+            <td>Actions</td>
+        </tr> 
+        <% end %> 
+    </tbody>
+</table>
